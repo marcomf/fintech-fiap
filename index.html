@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans antialiased bg-zinc-50 text-zinc-900 min-h-screen">
+
+  <div class="flex min-h-screen gap-5 p-5 max-md:flex-col max-md:gap-0 max-md:p-3 max-md:pb-[5.5rem]">
+
+    <!-- Sidebar (desktop) / Barra inferior (mobile) -->
+    <aside
+      class="flex flex-col items-center justify-start gap-10 bg-zinc-900 rounded-4xl py-7 px-3.5 w-[4.5rem] shrink-0 sticky top-5 h-[calc(100vh-2.5rem)] max-md:fixed max-md:bottom-3 max-md:left-3 max-md:right-3 max-md:top-auto max-md:h-auto max-md:w-auto max-md:flex-row max-md:justify-around max-md:gap-0 max-md:py-3 max-md:px-6 max-md:shadow-2xl max-md:z-50"
+      aria-label="Navegação principal"
+    >
+      <div class="text-white font-extrabold text-[0.65rem] tracking-widest uppercase select-none max-md:hidden">
+        LOGO
+      </div>
+
+      <nav class="flex flex-col items-center gap-4 max-md:flex-row max-md:gap-6">
+        <a
+          href="#"
+          class="flex items-center justify-center w-11 h-11 rounded-2xl text-violet-600 bg-violet-100 no-underline transition-colors"
+          aria-current="page"
+          title="Início"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="flex items-center justify-center w-11 h-11 rounded-2xl text-zinc-400 no-underline transition-colors hover:bg-white/10 hover:text-white"
+          title="Finanças"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+          </svg>
+        </a>
+      </nav>
+
+      <a
+        href="#"
+        class="flex items-center justify-center w-11 h-11 rounded-2xl text-zinc-400 no-underline transition-colors hover:bg-white/10 hover:text-white mt-auto max-md:mt-0"
+        title="Sair"
+      >
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+        </svg>
+      </a>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="flex-1 min-w-0 flex flex-col gap-6 max-md:gap-5">
+
+      <!-- Cabeçalho -->
+      <header class="flex justify-end items-center max-md:justify-center max-md:pt-2">
+        <div class="flex items-center gap-3">
+          <span class="font-semibold text-[0.95rem]">Marco Mendes</span>
+          <div
+            class="w-10 h-10 rounded-full border-2 border-white shadow-sm bg-gradient-to-br from-zinc-300 to-zinc-400"
+            role="img"
+            aria-label="Foto de perfil de Marco Mendes"
+          ></div>
+        </div>
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 items-start max-md:gap-5">
+
+        <!-- Coluna esquerda -->
+        <section class="flex flex-col gap-5">
+
+          <!-- Saudação -->
+          <article class="bg-zinc-100 rounded-3xl p-6 md:px-7 shadow-sm transition-shadow hover:shadow-md">
+            <h1 class="text-2xl max-md:text-xl font-bold mb-1.5 leading-tight">Bom dia, Marco.</h1>
+            <p class="text-sm text-zinc-500 m-0">Vamos gerenciar suas finanças novamente.</p>
+          </article>
+
+          <!-- Atalhos -->
+          <article class="bg-zinc-100 rounded-3xl p-6 md:px-7 shadow-sm transition-shadow hover:shadow-md">
+            <div class="flex items-center justify-between gap-4 max-sm:flex-col max-sm:items-start">
+              <span class="font-semibold text-[0.95rem]">Atalhos</span>
+              <div class="flex gap-3 max-sm:w-full max-sm:justify-center">
+                <button
+                  type="button"
+                  class="w-11 h-11 rounded-full flex items-center justify-center text-white border-0 cursor-pointer bg-green-600 transition hover:scale-110 hover:shadow-md"
+                  title="Registrar entrada"
+                  aria-label="Registrar entrada"
+                >
+                  <svg class="w-[1.15rem] h-[1.15rem]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="w-11 h-11 rounded-full flex items-center justify-center text-white border-0 cursor-pointer bg-red-600 transition hover:scale-110 hover:shadow-md"
+                  title="Registrar saída"
+                  aria-label="Registrar saída"
+                >
+                  <svg class="w-[1.15rem] h-[1.15rem]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="w-11 h-11 rounded-full flex items-center justify-center text-white border-0 cursor-pointer bg-zinc-900 transition hover:scale-110 hover:shadow-md"
+                  title="Gerar relatório"
+                  aria-label="Gerar relatório"
+                >
+                  <svg class="w-[1.15rem] h-[1.15rem]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Transações recentes -->
+          <section>
+            <h2 class="text-lg font-bold mb-3">Transações Recentes</h2>
+            <ul class="flex flex-col gap-2.5 list-none m-0 p-0">
+
+              <li class="flex items-center justify-between bg-zinc-100 rounded-2xl px-4 py-3.5 max-md:px-4 max-md:py-3 shadow-sm transition-shadow hover:shadow-md">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-9 h-9 rounded-full flex items-center justify-center shrink-0 font-extrabold text-sm bg-[#e50914] text-white" aria-hidden="true">N</div>
+                  <span class="font-medium text-[0.925rem]">Netflix</span>
+                </div>
+                <span class="font-semibold text-sm text-red-600 whitespace-nowrap">R$ -39,90</span>
+              </li>
+
+              <li class="flex items-center justify-between bg-zinc-100 rounded-2xl px-4 py-3.5 max-md:px-4 max-md:py-3 shadow-sm transition-shadow hover:shadow-md">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-9 h-9 rounded-full flex items-center justify-center shrink-0 bg-[#00a8e1] text-white" aria-hidden="true">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M4 5v14l8-4.5L20 19V5l-8 4.5L4 5z"/>
+                    </svg>
+                  </div>
+                  <span class="font-medium text-[0.925rem]">Prime Video</span>
+                </div>
+                <span class="font-semibold text-sm text-red-600 whitespace-nowrap">R$ -19,90</span>
+              </li>
+
+              <li class="flex items-center justify-between bg-zinc-100 rounded-2xl px-4 py-3.5 max-md:px-4 max-md:py-3 shadow-sm transition-shadow hover:shadow-md">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-9 h-9 rounded-full flex items-center justify-center shrink-0 bg-green-100 text-green-600" aria-hidden="true">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                    </svg>
+                  </div>
+                  <span class="font-medium text-[0.925rem]">Salário</span>
+                </div>
+                <span class="font-semibold text-sm text-green-600 whitespace-nowrap">R$ +3.500,00</span>
+              </li>
+
+            </ul>
+          </section>
+        </section>
+
+        <!-- Coluna direita -->
+        <section class="flex flex-col gap-5 max-md:-order-1">
+
+          <!-- Resumo -->
+          <div class="grid grid-cols-2 gap-4 max-md:gap-3">
+            <article class="flex items-center gap-3.5 bg-zinc-100 rounded-3xl px-6 py-5 max-md:px-4 max-md:py-4 shadow-sm">
+              <span class="text-4xl max-md:text-3xl font-extrabold leading-none">1</span>
+              <span class="text-xs font-medium text-zinc-500 leading-snug">Entrada<br>Registrada</span>
+            </article>
+            <article class="flex items-center gap-3.5 bg-zinc-100 rounded-3xl px-6 py-5 max-md:px-4 max-md:py-4 shadow-sm">
+              <span class="text-4xl max-md:text-3xl font-extrabold leading-none">2</span>
+              <span class="text-xs font-medium text-zinc-500 leading-snug">Saídas<br>Registradas</span>
+            </article>
+          </div>
+
+          <!-- Gráfico -->
+          <section class="flex-1">
+            <h2 class="text-lg font-bold mb-3">Suas estatísticas</h2>
+            <div
+              class="relative bg-zinc-100 rounded-3xl min-h-64 max-md:min-h-48 flex flex-col items-center justify-center px-6 py-8 shadow-sm overflow-hidden"
+              role="img"
+              aria-label="Gráfico de entradas e saídas"
+            >
+              <div class="flex items-end justify-center gap-3 h-32 mb-5 opacity-35" aria-hidden="true">
+                <div class="w-7 h-[72%] rounded-t-lg bg-gradient-to-t from-green-600 to-green-400"></div>
+                <div class="w-7 h-[45%] rounded-t-lg bg-gradient-to-t from-red-600 to-red-400"></div>
+                <div class="w-7 h-[58%] rounded-t-lg bg-gradient-to-t from-green-600 to-green-400"></div>
+                <div class="w-7 h-[38%] rounded-t-lg bg-gradient-to-t from-red-600 to-red-400"></div>
+                <div class="w-7 h-[85%] rounded-t-lg bg-gradient-to-t from-green-600 to-green-400"></div>
+                <div class="w-7 h-[52%] rounded-t-lg bg-gradient-to-t from-red-600 to-red-400"></div>
+              </div>
+              <p class="text-sm font-medium text-zinc-500 text-center m-0">Gráfico de entradas e saídas</p>
+            </div>
+          </section>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
